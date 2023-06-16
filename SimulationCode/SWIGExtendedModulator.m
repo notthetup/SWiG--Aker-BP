@@ -1,8 +1,8 @@
 %> @brief Class for SWIG modulator
 %> @details Implements a modulator based on SWiG level with, but with the
 %>ability to demodulate and decode multiple messages simultaneously
-classdef SWIGImprovedModulator < midBandModulatorClass
-    %SWIGImprovedModulator Characterizes the SWIG physical transmission
+classdef SWIGExtendedModulator < midBandModulatorClass
+    %SWIGExtendedModulator Characterizes the SWIG physical transmission
     %   
 
     properties
@@ -13,7 +13,7 @@ classdef SWIGImprovedModulator < midBandModulatorClass
         %> @param [in] fullDuplex - boolean describing if self-cancelling
         %> @param [in] CSMA - boolean indicating if must wait for no carrier
         %> before sending
-        function obj = SWIGImprovedModulator(fullDuplex,CSMA)
+        function obj = SWIGExtendedModulator(fullDuplex,CSMA)
             topBitrate = 220;
             packetLength = 49;
             preambleCollisionFatal = true;
@@ -32,7 +32,7 @@ classdef SWIGImprovedModulator < midBandModulatorClass
         %> bandwidth - a double between 0 and 1 indicating fractional
         %>bandwidth
         function modulatorType = getModulatorType(obj)
-            modulatorType.style = 'SWiG improved';
+            modulatorType.style = 'SWiG extended';
             modulatorType.bandwidth = obj.bandwidthFraction;
         end
     end

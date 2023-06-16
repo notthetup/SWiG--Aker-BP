@@ -2,7 +2,7 @@
 
 modulatorsSMAC = {
     SWIGModulator(false,false);
-    SWIGImprovedModulator(false,false);
+    SWIGExtendedModulator(false,false);
     genericDSSSModulator(false,false);
     };
 modulatorsHDC = {
@@ -134,7 +134,7 @@ figure(4);
 range=logspace(0,log10(50e3),5000);
 bitrates=zeros(6,length(range));
 for i=1:6
-    modulator = SWIGImprovedModulator(false,false);
+    modulator = SWIGExtendedModulator(false,false);
     maxBits = modulator.topBitrate;
     EbN0Min = modulator.EbOverN0Required;
     P = modulator.signalPowerIn_dB;
@@ -187,7 +187,7 @@ end
 semilogy(range*1e-3,bitrates);
 xlabel('Range (Km)');
 ylabel('Bit rate (bps)');
-title('Range vs. Max Bit Rate SWiG Improved Modulation');
+title('Range vs. Max Bit Rate SWiG Extended Modulation');
 grid on
 legend('180 dB, 25 kHz','190 dB, 25 kHz','180 dB, 17 kHz',...
     '190 dB, 17 kHz', '180 dB, 12 kHz','190 dB, 12 kHz');
