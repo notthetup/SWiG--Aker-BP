@@ -12,7 +12,7 @@
 <area shape="rect" id="node10" href="$class_q_p_s_k_modulator.html" title="QPSK high&#45;speed HD modulator/demodulator." alt="" coords="445,259,561,285"/>
 <area shape="rect" id="node11" href="$classgeneric_d_s_s_s_modulator.html" title="Class for generic DSSSmodulator." alt="" coords="425,309,582,336"/>
 <area shape="rect" id="node12" href="$classmid_band_modulator_class.html" title="base class for SWiG type modulators" alt="" coords="422,360,585,387"/>
-<area shape="rect" id="node13" href="$class_s_w_i_g_improved_modulator.html" title="Class for SWIG modulator." alt="" coords="643,309,808,336"/>
-<area shape="rect" id="node14" href="$class_s_w_i_g_modulator.html" title="Class for SWIG modulator." alt="" coords="668,360,783,387"/>
-<area shape="rect" id="node15" href="$class_s_w_i_g_primitive_modulator.html" title="Class for SWIG primitive modulator." alt="" coords="644,411,807,437"/>
+<area shape="rect" id="node13" href="$class_s_w_i_g_extended_modulator.html" title="Class for SWIG modulator." alt="" coords="643,309,812,336"/>
+<area shape="rect" id="node14" href="$class_s_w_i_g_modulator.html" title="Class for SWIG modulator." alt="" coords="670,360,785,387"/>
+<area shape="rect" id="node15" href="$class_s_w_i_g_primitive_modulator.html" title="Class for SWIG primitive modulator." alt="" coords="646,411,809,437"/>
 </map>
