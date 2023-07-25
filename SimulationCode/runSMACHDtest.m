@@ -10,6 +10,7 @@ ModulatorList = {
 nodeRange = 2000;
 numNodes = 8;
 results=cell(3,1);
+channelModel = reliableAcousticPathModel(70,3,0.05);
 parfor modulatorIndex = 1:4
     rng(0);
     locations=nodeRange*rand(numNodes,3);
@@ -20,7 +21,7 @@ parfor modulatorIndex = 1:4
     maxQueueDepth = 1024;
     nodes = cell(numNodes,1);
     for i = 1:numNodes
-        nodes{i}=nodeClass(locations(i,:),ModulatorList,i,maxQueueDepth); %#ok<*SAGROW>
+        nodes{i}=nodeClass(locations(i,:),ModulatorList,i,maxQueueDepth,channelModel); %#ok<*SAGROW>
         nodes{i}.setModulator(modulatorIndex);  %SWiG modulator without CSMA and with multiple simultaneous decode
     end
     timeToRun = 1200;
